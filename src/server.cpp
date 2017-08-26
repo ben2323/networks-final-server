@@ -16,14 +16,14 @@ void printMessngerInstructions(){
 	cout<<"list_users - list all users" << endl;
 	cout<<"list_connected_users - list all connected users"<<endl;
 	cout<<"list_sessions - list all sessions (two clients communicating)"<<endl;
-	cout<<"exit - shutdown"<<endl;
+	cout<<"exit - shutdownaaaaaaaaaaaaaaaaaaa"<<endl;
 	cout<<"----------------------------------------------"<<endl;
 	cout<<"----------------------------------------------"<<endl;
 }
 
 
 int main(){
-	cout<<"----------Welcome To Messenger Serveraaabbba---------"<<endl;
+	cout<<"----------Welcome To Messenger Server---------"<<endl;
 	printMessngerInstructions();
 	TCPMessengerServer msngrServer;
 	while(true){
