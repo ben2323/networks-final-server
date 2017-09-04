@@ -1,8 +1,3 @@
-/*
- * Stas Mushkin 309284958
- * Noa Fialkov 204498133
- */
-
 
 #ifndef SESSIONSHANDLER_H_
 #define SESSIONSHANDLER_H_
@@ -12,9 +7,9 @@
 #include <string.h>
 #include <vector>
 #include <map>
-#include "../Core/Semaphore.h"
-#include "../Models/User.h"
-#include "../Common/TCPMessanger.h"
+#include "../Socket/Semaphore.h"
+#include "../Users/User.h"
+#include "../Messenger/TCPMessenger.h"
 #include "../UsersManager.h"
 
 using namespace std;

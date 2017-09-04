@@ -1,49 +1,42 @@
-//============================================================================
-// Name        : server.cpp
-// Author      : aa
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
 
 #include <iostream>
 #include "TCPMessengerServer.h"
 using namespace std;
 
-void printMessngerInstructions(){
+void printMessngerguide(){
 
-	cout<<"---------------------CLI:---------------------"<<endl;
-	cout<<"list_users - list all users" << endl;
-	cout<<"list_connected_users - list all connected users"<<endl;
-	cout<<"list_sessions - list all sessions (two clients communicating)"<<endl;
-	cout<<"exit - shutdownaaaaaaaaaaaaaaaaaaa"<<endl;
-	cout<<"----------------------------------------------"<<endl;
-	cout<<"----------------------------------------------"<<endl;
+	cout<<"*************Command********Line*************"<<endl;
+	cout<<"users - list of users" << endl;
+	cout<<"connected_users - list of connected users"<<endl;
+	cout<<"sessions - list of sessions"<<endl;
+	cout<<"quit"<<endl;
+	cout<<"*********************************************"<<endl;
+
 }
 
 
 int main(){
-	cout<<"----------Welcome To Messenger Server---------"<<endl;
-	printMessngerInstructions();
-	TCPMessengerServer msngrServer;
+	cout<<"*********Welcome*To*Messenger*Server*********"<<endl;
+	printMessngerguide();
+	TCPMessengerServer messengerServer;
 	while(true){
 		string msg;
 		string command;
 		cin >> command;
-		if(command == "list_users"){
-			msngrServer.printAllUsers();
-		}else if(command == "list_connected_users"){
-			msngrServer.printConnectedUsers();
-		}else if(command == "list_sessions"){
-			msngrServer.printSessions();
-		}else if(command == "exit"){
+		if(command == "users"){
+			messengerServer.printUsersList();
+		}else if(command == "connected_users"){
+			messengerServer.printConnectedUsers();
+		}else if(command == "sessions"){
+			messengerServer.printSessions();
+		}else if(command == "quit"){
 			break;
 		}else{
-			cout<<"wrong input, please use the cli guide"<<endl;
-			printMessngerInstructions();
+			cout<<"error input, please use the guide"<<endl;
+			printMessngerguide();
 		}
 	}
-	msngrServer.close();
-	cout<<"messenger was closed!. bye bye"<<endl;
+	messengerServer.close();
+	cout<<"messenger closed. thank you and bye"<<endl;
 	return 0;
 }

@@ -1,8 +1,3 @@
-/*
- * Stas Mushkin 309284958
- * Noa Fialkov 204498133
- */
-
 
 #ifndef TCPMSNDISPATCHER_H_
 #define TCPMSNDISPATCHER_H_
@@ -13,14 +8,14 @@
 #include <set>
 #include <stdlib.h>
 #include <time.h>
-#include "Core/TCPSocket.h"
-#include "Core/MThread.h"
-#include "Core/MultipleTCPSocketsListener.h"
-#include "Common/TCPMessanger.h"
+#include "Messenger/TCPMessenger.h"
 #include "UsersManager.h"
-#include "Core/Semaphore.h"
 #include "Handlers/InfoHandler.h"
 #include "Handlers/SessionsHandler.h"
+#include "Socket/MThread.h"
+#include "Socket/MultipleTCPSocketsListener.h"
+#include "Socket/Semaphore.h"
+#include "Socket/TCPSocket.h"
 
 using namespace std;
 

@@ -1,7 +1,3 @@
-/*
- * Stas Mushkin 309284958
- * Noa Fialkov 204498133
- */
 
 #include "TCPMessengerServer.h"
 
@@ -55,8 +51,8 @@ void TCPMessengerServer::run(){
 }
 
 
-void TCPMessengerServer::printAllUsers(){
-	cout << "All Users in messenger: " << endl;
+void TCPMessengerServer::printUsersList(){
+	cout << "All Users in the messenger: " << endl;
 	vector<string> users = this->usersManager->getAllUsers();
 	sem->lock();
 	vector<string>::iterator it = users.begin();

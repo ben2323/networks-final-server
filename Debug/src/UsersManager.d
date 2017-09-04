@@ -1,37 +1,36 @@
 src/UsersManager.d: ../src/UsersManager.cpp ../src/UsersManager.h \
- ../src/Core/MThread.h ../src/Core/TCPSocket.h \
- ../src/Core/MultipleTCPSocketsListener.h ../src/Core/TCPSocket.h \
- ../src/Core/Semaphore.h ../src/Common/TCPMessanger.h \
- ../src/Common/../Core/TCPSocket.h ../src/Common/TCPMessengerProtocol.h \
- ../src/Common/../Models/User.h \
- ../src/Common/../Models/../Core/TCPSocket.h \
- ../src/Common/TCPMessengerProtocol.h ../src/Models/User.h \
- ../src/Core/Semaphore.h
+ ../src/Messenger/TCPMessenger.h ../src/Messenger/../Socket/TCPSocket.h \
+ ../src/Messenger/TCPMessengerProtocol.h ../src/Messenger/../Users/User.h \
+ ../src/Messenger/../Users/../Socket/TCPSocket.h \
+ ../src/Messenger/TCPMessengerProtocol.h ../src/Users/User.h \
+ ../src/Socket/MThread.h ../src/Socket/MultipleTCPSocketsListener.h \
+ ../src/Socket/../Socket/Semaphore.h ../src/Socket/../Socket/TCPSocket.h \
+ ../src/Socket/Semaphore.h ../src/Socket/TCPSocket.h
 
 ../src/UsersManager.h:
 
-../src/Core/MThread.h:
+../src/Messenger/TCPMessenger.h:
 
-../src/Core/TCPSocket.h:
+../src/Messenger/../Socket/TCPSocket.h:
 
-../src/Core/MultipleTCPSocketsListener.h:
+../src/Messenger/TCPMessengerProtocol.h:
 
-../src/Core/TCPSocket.h:
+../src/Messenger/../Users/User.h:
 
-../src/Core/Semaphore.h:
+../src/Messenger/../Users/../Socket/TCPSocket.h:
 
-../src/Common/TCPMessanger.h:
+../src/Messenger/TCPMessengerProtocol.h:
 
-../src/Common/../Core/TCPSocket.h:
+../src/Users/User.h:
 
-../src/Common/TCPMessengerProtocol.h:
+../src/Socket/MThread.h:
 
-../src/Common/../Models/User.h:
+../src/Socket/MultipleTCPSocketsListener.h:
 
-../src/Common/../Models/../Core/TCPSocket.h:
+../src/Socket/../Socket/Semaphore.h:
 
-../src/Common/TCPMessengerProtocol.h:
+../src/Socket/../Socket/TCPSocket.h:
 
-../src/Models/User.h:
+../src/Socket/Semaphore.h:
 
-../src/Core/Semaphore.h:
+../src/Socket/TCPSocket.h:

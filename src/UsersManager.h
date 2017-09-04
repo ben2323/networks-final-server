@@ -1,7 +1,3 @@
-/*
- * Stas Mushkin 309284958
- * Noa Fialkov 204498133
- */
 
 
 #ifndef USERSMANAGER_H_
@@ -12,13 +8,13 @@
 #include <vector>
 #include<iostream>
 #include<fstream>
-#include "Core/MThread.h"
-#include "Core/TCPSocket.h"
-#include "Core/MultipleTCPSocketsListener.h"
-#include "Common/TCPMessanger.h"
-#include "Common/TCPMessengerProtocol.h"
-#include "Models/User.h"
-#include "Core/Semaphore.h"
+#include "Messenger/TCPMessenger.h"
+#include "Messenger/TCPMessengerProtocol.h"
+#include "Users/User.h"
+#include "Socket/MThread.h"
+#include "Socket/MultipleTCPSocketsListener.h"
+#include "Socket/Semaphore.h"
+#include "Socket/TCPSocket.h"
 
 using namespace std;
 
